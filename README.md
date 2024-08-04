@@ -12,7 +12,7 @@ This project was built using SpringBoot with **Java 21** and **Maven** as the bu
 ## *Running the app*
 In order to run this application you will need to:
 
-- clone this repository: `git clone repo-browser`
+- clone this repository: `git clone https://github.com/yfigueira/repo-browser.git`
 - navigate to the project root directory: `cd repo-browser`
 - run the application: `mvn spring-boot:run`
 - in your web browser, navigate to `http://localhost:8080/swagger-ui.html` and try making a GET request providing a GitHub username
