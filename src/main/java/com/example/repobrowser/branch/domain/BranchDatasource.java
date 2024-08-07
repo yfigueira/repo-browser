@@ -1,10 +1,9 @@
 package com.example.repobrowser.branch.domain;
 
 import com.example.repobrowser.repository.domain.Repository;
-
-import java.util.List;
+import reactor.core.publisher.Flux;
 
 public interface BranchDatasource {
 
-    List<Branch> findByRepository(Repository repository);
+    Flux<Branch> findByRepository(Repository repository);
 }

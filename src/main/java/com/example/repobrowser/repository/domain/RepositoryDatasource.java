@@ -1,8 +1,8 @@
 package com.example.repobrowser.repository.domain;
 
-import java.util.List;
+import reactor.core.publisher.Flux;
 
 public interface RepositoryDatasource {
 
-    List<Repository> findByUsername(String username);
+    Flux<Repository> findByUsername(String username);
 }

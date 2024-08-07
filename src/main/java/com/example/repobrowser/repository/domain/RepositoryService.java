@@ -14,6 +14,8 @@ public class RepositoryService {
 
     public List<Repository> getByUsername(String username) {
             if (username == null || username.isEmpty()) throw RepositoryException.missingUsernameArgument();
-            return repositoryDatasource.findByUsername(username);
+            return repositoryDatasource.findByUsername(username)
+                    .collectList()
+                    .block();
     }
 }
